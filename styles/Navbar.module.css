@@ -2,10 +2,8 @@
   /* variables */
   --margin-left: 40px;
 
-  /* height: 100px; */
   padding: 20px 40px 20px 40px;
-  margin: -30px 0 20px 0;
-  /* background-color: #313840f1; */
+  margin: -50px 0 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,6 +83,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .container {
+    justify-content: space-between;
+  }
+
   .listItem.active {
     color: #ddd;
     text-shadow: 2px 2px #333;
@@ -113,7 +115,7 @@
     text-align: left;
     margin-right: auto;
     margin-left: var(--margin-left);
-    margin-top: 39px;
+    margin-top: 31px;
     margin-bottom: 40px;
     font-weight: 500;
     width: 100%;
@@ -158,10 +160,5 @@
   .break {
     visibility: hidden;
     margin-bottom: 40px;
-  }
-
-  .hamburger {
-    /* margin-top: -40px;
-    margin-right: -30px; */
   }
 }
