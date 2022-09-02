@@ -1,0 +1,50 @@
+.bgImage {
+  position: relative;
+  top: -100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../public/img/gallery1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 40%;
+  height: 750px;
+}
+
+.centerContainer {
+  position: relative;
+  top: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Pattaya', sans-serif;
+  font-size: clamp(50px, 10vw, 100px);
+  color: white;
+  text-shadow: 2px 2px #333;
+  text-align: center;
+}
+
+.description {
+  font-size: 32px;
+  color: white;
+  text-shadow: 2px 2px #333;
+}
+
+/* .logoImage {
+  background-image: url(../public/img/logo_full.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: max(300px, 15vw);
+  height: max(300px, 15vw);
+} */
+
+.button {
+  margin: 20px;
+  padding: 15px;
+
+  border: 1px solid #98875c;
+  border-radius: 2px;
+
+  background-color: #98875c;
+  color: white;
+}
