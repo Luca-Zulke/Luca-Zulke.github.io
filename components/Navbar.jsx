@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Navbar = () => {
   useEffect(() => {
     window.onscroll = function() {
-      var scrollLimit = 205;
+      var scrollLimit = 181;
       if (window.scrollY >= scrollLimit) {
         isScrolled = true;
         setScroll();
