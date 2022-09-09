@@ -10,15 +10,14 @@
 }
 
 .imageContainer {
-  width: clamp(300px, 500px, 92%);
+  width: 100%;
   margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: 4vw;
 }
 
 .aboutContainer {
-  width: 92%;
+  width: 100%;
   margin: 0 auto;
+  margin-left: auto;
 }
 
 .aboutItem:nth-child(1) {
@@ -49,19 +48,33 @@
   font-weight: 500;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
   .container {
     flex-direction: row;
+    width: 970px;
   }
 
   .imageContainer {
+    width: 50%;
+    margin-left: var(--margin);
     margin-right: var(--margin);
-
-    width: clamp(60%, 800px, 92%);
   }
 
   .aboutContainer {
+    width: 50%;
     margin-left: var(--margin);
-    width: clamp(50%, 600px, 92%);
+    margin-right: var(--margin);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
   }
 }

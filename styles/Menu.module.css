@@ -43,18 +43,6 @@
   margin-bottom: 40px;
 }
 
-.overlayItem:nth-child(4) {
-  padding: 15px;
-
-  border: 1px solid #98875c;
-  border-radius: 2px;
-
-  background-color: #98875c;
-  color: white;
-
-  cursor: pointer;
-}
-
 /* MENU */
 .menuContainer {
   margin: 0 auto;

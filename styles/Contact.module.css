@@ -1,0 +1,141 @@
+.contact {
+  background-color: #f6f6f6;
+}
+
+.container {
+  padding: 100px 15px 60px 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 70px;
+}
+
+.section > div:nth-child(1) {
+  color: #333333;
+  font-weight: 500;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section hr {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.section > div:nth-child(3) {
+  color: #777777;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.formContainer {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 92%;
+}
+
+#contactForm {
+  padding: 0;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 0 15px;
+}
+
+.row > .input {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input:nth-child(1) {
+  padding-right: 15px;
+}
+
+.input:nth-child(2) {
+  /* margin-top: -48px; */
+  padding-right: 15px;
+}
+
+.row:last-child textarea {
+  min-height: 100px;
+  max-height: 400px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #444;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  font-family: inherit;
+  margin: 0;
+  font: inherit;
+  padding: 6px 12px;
+}
+
+.input:focus-visible,
+.input:focus {
+  outline: 1px solid #d6d6d6cc;
+}
+
+.button {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #98875c;
+  border-radius: 2px;
+  background-color: #98875c;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
+  .formContainer {
+    width: 83%;
+  }
+
+  .row:first-child {
+    display: flex;
+    gap: 30px;
+  }
+
+  .row > .input {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row;
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

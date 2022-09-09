@@ -6,6 +6,28 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizelegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  scroll-padding-top: 70px;
+}
+
+@media (min-width: 480px) {
+  html,
+  body {
+    scroll-padding-top: 73px;
+  }
+}
+
+@media (min-width: 768px) {
+  html,
+  body {
+    scroll-padding-top: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  html,
+  body {
+    scroll-padding-top: 105px;
+  }
 }
 
 a {
@@ -41,6 +63,20 @@ hr {
   margin-inline-end: auto;
   overflow: hidden;
   margin: 0px 0px 40px;
+}
+
+button {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #98875c;
+  border-radius: 2px;
+  background-color: #98875c;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 /* @media (prefers-color-scheme: dark) {

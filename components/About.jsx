@@ -8,7 +8,7 @@ const About = () => {
       
       <div className={styles.imageContainer}>
         {/* <div className={styles.image} /> */}
-        <Image className={styles.image} src='/img/gallery3.jpg' alt='' layout='intrinsic' width={733} height={500} objectFit='cover'/>
+        <Image className={styles.image} src='/img/gallery3.jpg' alt='' layout='intrinsic' width={1400} height={900} objectFit='cover'/>
       </div>
 
       <div className={styles.aboutContainer}>

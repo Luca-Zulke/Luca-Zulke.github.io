@@ -9,7 +9,7 @@ const Menu = () => {
         <div className={styles.overlayItem}>MENU</div>
         <hr/>
         <div className={styles.overlayItem}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, commodi.</div>
-        <button className={styles.overlayItem} type='button'>Download menu</button>
+        <button className={styles.overlayItem} type='button'>DOWNLOAD MENU</button>
       </div>
     </div>
     <div className={styles.menuContainer}>

@@ -9,6 +9,16 @@
   text-align: center;
 }
 
+.mapContainer {
+  width: min(600px, 92%);
+  margin: 0 auto;
+}
+
+.map {
+  width: 100%;
+  height: 450px;
+}
+
 .contactContainer {
   display: flex;
   flex-direction: column;
@@ -16,7 +26,8 @@
 
 .row {
   padding: 0 15px;
-  width: calc(100% / 3);
+  margin: 0 auto;
+  width: 100%;
 }
 
 .row > div {
@@ -33,19 +44,55 @@
   margin-block: 20px;
 }
 
+.media {
+  width: 100%;
+  background-color: #98875c;
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.mediaIcons {
+  margin: 20px 0 30px 0;
+}
+
+.mediaIcons ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+}
+
+.mediaIcons ul > li {
+  font-size: 36px;
+  margin-inline: 20px;
+  cursor: pointer;
+}
+
+.copyright {
+  font-size: 15px;
+  color: #ffffffcc;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
+  }
+
+  .row {
+    width: calc(100% / 3);
+  }
+
+  .contactContainer {
+    flex-direction: row;
   }
 }
 
 @media (min-width: 992px) {
   .container {
     width: 970px;
-  }
-
-  .contactContainer {
-    flex-direction: row;
   }
 }
 
