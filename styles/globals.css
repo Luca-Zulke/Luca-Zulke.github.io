@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: 'Raleway', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
+  text-rendering: optimizelegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 a {
@@ -18,6 +20,27 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+hr {
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #98875c;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  box-sizing: content-box;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  margin: 0px 0px 40px;
 }
 
 /* @media (prefers-color-scheme: dark) {

@@ -1,0 +1,140 @@
+/* DOWNLOAD */
+.container {
+  padding-bottom: 60px;
+}
+
+.downloadContainer {
+  background: url(../public/img/gallery4.jpg) fixed;
+  background-repeat: no-repeat;
+  background-color: #444444;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.container hr {
+  margin: 0px auto 40px;
+}
+
+.overlay {
+  padding: 80px 0;
+}
+
+.overlayItem:nth-child(1) {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.overlayItem:nth-child(2) {
+  border: 1px solid #98875c;
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.overlayItem:nth-child(3) {
+  color: #ffffffcc;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.overlayItem:nth-child(4) {
+  padding: 15px;
+
+  border: 1px solid #98875c;
+  border-radius: 2px;
+
+  background-color: #98875c;
+  color: white;
+
+  cursor: pointer;
+}
+
+/* MENU */
+.menuContainer {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.menuContainer > div {
+  margin: 0 -15px;
+}
+
+.menuRow {
+  width: 100%;
+}
+
+.menuSection {
+  margin: 0 20px 80px;
+}
+
+.menuSectionTitle {
+  display: block;
+  font-size: 26px;
+  color: #444444;
+  margin: 20px 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+.menuItem {
+  margin: 35px 0;
+  font-size: 18px;
+}
+
+.menuItem div:nth-child(1) {
+  font-size: 17px;
+  font-weight: 600;
+  color: #555555;
+  border-bottom: 2px dotted #d5d5d5;
+}
+
+.menuItem div:nth-child(2) {
+  float: right;
+  font-weight: 600;
+  color: #555555;
+  margin-top: -26px;
+}
+
+.menuItem div:nth-child(3) {
+  color: #777777;
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .menuContainer {
+    width: 750px;
+  }
+
+  .menuContainer > div {
+    margin: 0 -15px;
+    display: flex;
+  }
+
+  .menuRow {
+    width: 50%;
+  }
+
+  .menuRow:nth-child(n + 2) {
+    flex: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .menuContainer {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menuContainer {
+    width: 1170px;
+  }
+}

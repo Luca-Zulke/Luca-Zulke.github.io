@@ -1,7 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import About from '../components/About';
+import Contact from '../components/Contact';
+import Gallery from '../components/Gallery';
 import Landing from '../components/Landing';
+import Menu from '../components/Menu';
+import Staff from '../components/Staff';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -17,6 +20,10 @@ export default function Home() {
       </Head>
       <Landing />
       <About />
+      <Menu />
+      <Gallery />
+      <Staff />
+      <Contact />
     </div>
   );
 }
