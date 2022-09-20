@@ -29,7 +29,7 @@
   padding: 20px 0;
 }
 
-.categories ul > li a {
+.categories ul > li button {
   color: #999999;
   font-weight: 500;
   font-size: 14px;
@@ -39,10 +39,11 @@
   border-radius: 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin: 0;
 }
 
-.categories ul > li a:hover,
-.categories ul > li a.active {
+.categories ul > li button:hover,
+.categories ul > li button.active {
   color: #ffffff;
   background-color: #98875c;
 }
@@ -69,9 +70,9 @@
   margin: 10px 0px;
 }
 
-.itemHoverBg a {
+/* .itemHoverBg a {
   height: 100%;
-}
+} */
 
 .hoverText {
   display: none;
