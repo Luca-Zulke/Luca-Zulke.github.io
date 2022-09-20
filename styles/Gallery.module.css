@@ -3,6 +3,46 @@
   margin: 0 auto;
 }
 
+.bannerContainer {
+  background: url(../public/img/gallery5.jpg) fixed;
+  background-repeat: no-repeat;
+  background-color: #444444;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.bannerContainer hr {
+  margin: 0px auto 40px;
+}
+
+.overlay {
+  padding: 80px 0;
+}
+
+.overlayItem:nth-child(1) {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.overlayItem:nth-child(2) {
+  border: 1px solid #98875c;
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.overlayItem:nth-child(3) {
+  color: #ffffffcc;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
 .categoryContainer {
   margin: -15px 0;
 }
