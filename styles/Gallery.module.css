@@ -40,6 +40,7 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0;
+  user-select: none;
 }
 
 .categories ul > li button:hover,
@@ -54,28 +55,62 @@
   z-index: 2;
 }
 
-.gallery {
-}
-
 .galleryItems {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  column-gap: 65px;
+  /* column-gap: 65px; */
 }
 
 .item {
-  margin: 10px 0px;
+  margin: 15px 15px;
+  overflow: hidden;
+  position: relative;
+  width: min(360px, 90%);
+  cursor: pointer;
+  user-select: none;
 }
 
-/* .itemHoverBg a {
-  height: 100%;
-} */
+.itemHoverBg {
+  height: 240px;
+}
+
+.itemHoverBg::before {
+  content: '';
+  position: absolute;
+  border: 1px solid #ffffff99;
+  top: 6px;
+  bottom: 6px;
+  left: 6px;
+  right: 6px;
+  z-index: 20;
+}
 
 .hoverText {
-  display: none;
+  display: block;
+  position: absolute;
+  background-color: #00000099;
+  color: #ffffff;
+  z-index: 10;
+  height: 240px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  line-height: 300px;
+  transition: all 0.3s ease-out;
+}
+
+.itemHoverBg:hover .hoverText {
+  line-height: 250px;
+  opacity: 1;
+  z-index: 10;
+  user-select: none;
+}
+
+.itemImg {
+  background-position: 50%;
 }
 
 .hide {
@@ -88,26 +123,7 @@
   }
 
   .item {
-    width: 50%;
-  }
-
-  .hoverText {
-    display: block;
-    position: absolute;
-    background-color: #00000099;
-    color: #ffffff;
-    z-index: 10;
-    height: 240px;
-    width: 360px;
-    text-align: center;
-    opacity: 0;
-    line-height: 300px;
-    transition: all 0.3s ease-out;
-  }
-
-  .hoverText:hover {
-    line-height: 250px;
-    opacity: 1;
+    width: 46%;
   }
 }
 
@@ -117,7 +133,7 @@
   }
 
   .item {
-    width: 33%;
+    width: 30%;
   }
 }
 

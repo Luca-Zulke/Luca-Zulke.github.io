@@ -1,19 +1,21 @@
 import Image from 'next/image';
 import React, { useState } from 'react'
-import styles from '../styles/Gallery.module.css';
+import styles from '../styles/Gallery.module.css'
+import * as basicLightbox from 'basiclightbox'
+import "basiclightbox/dist/basicLightbox.min.css"
 
 const Gallery = () => {
   const images = {
+    cat2: ["/img/gallery4.jpg", "/img/gallery5.jpg","/img/gallery1.jpg", "/img/gallery2.jpg"],
     cat1: ["/img/gallery1.jpg", "/img/gallery2.jpg", "/img/gallery3.jpg", "/img/gallery4.jpg"],
-    cat2: ["/img/gallery5.jpg","/img/gallery1.jpg", "/img/gallery2.jpg", "/img/gallery3.jpg"],
-    cat3: ["/img/gallery4.jpg", "/img/gallery5.jpg","/img/gallery1.jpg", "/img/gallery2.jpg"]
+    cat3: ["/img/gallery5.jpg","/img/gallery1.jpg", "/img/gallery2.jpg", "/img/gallery3.jpg"],
   }
 
   const [showCategory, setShowCategory] = useState("all");
   const setCategory = (showCategory) => setShowCategory(showCategory);
 
   const [isActive, setIsActive] = useState(0);
-  const setActive = (isActive) => setIsActive(isActive);
+  const setActive = (isActive) => setIsActive(isActive);  
 
   return (
     <div id='gallery' className={styles.container}>
@@ -29,49 +31,25 @@ const Gallery = () => {
       </div>
 
       <div className={styles.galleryContainer}>
-        <div className={styles.gallery}>
           <div className={styles.galleryItems}>
             {
               Object.entries(images).map((key, i) => (
-                  //+ " " + styles.hide
-                  // console.log( " i: ", i, " key[1]: ", key[1])
-
-                  key[1].map((img, index) => (
-                    // console.log("showCategory: ", showCategory, " key[0]: ", key[0], "showCategory === key[0]:", showCategory === key[0]),
-                    <div key={index} data-filter={key[0]} className={showCategory === key[0] || showCategory === "all" ? styles.item : styles.item + " " + styles.hide}>
-                      <div className={styles.itemHoverBg}>
-                        {/* <a href={img} alt=""> */}
-                          <div className={styles.hoverText}>
-                            {img.substring(img.lastIndexOf('/') + 1, img.indexOf('.')).split('_').join(' ')}
-                          </div>
-                          <Image className={styles.itemImg} src={img} layout="fixed" width={360} height={240} alt="" objectFit="cover"/>
-                        {/* </a> */}
+                key[1].map((img, index) => (
+                  <div onClick={() => {basicLightbox.create(`
+                  <img width="1400" height="900" src="${img}">
+                `).show();}} key={index} data-filter={key[0]} className={showCategory === key[0] || showCategory === "all" ? styles.item : styles.item + " " + styles.hide}>
+                    <div id='my-gallery' className={styles.itemHoverBg}>
+                      <div className={styles.hoverText}>
+                        {img.substring(img.lastIndexOf('/') + 1, img.indexOf('.')).split('_').join(' ')}
                       </div>
+                      <Image className={styles.itemImg} src={img} layout="fill" alt="" objectFit="cover"/>
                     </div>
-                  ))
-              ))
-            // Object.entries(images).forEach((entry) => {
-            //   entry.forEach((item) => {
-            //     console.log("item: ", item)
-            //   })
-            //   console.log("entry: ", entry)
-            // })
+                  </div>
+                ))
+              )
+            )
           }
-            {/* // images.all.map((img, i) => (
-            //   //+ " " + styles.hide
-            //   <div key={i} className={styles.item}>
-            //     <div className={styles.itemHoverBg}>
-            //       <a href={img} key={i} alt="">
-            //         <div className={styles.hoverText}>
-            //           {img.substring(img.lastIndexOf('/') + 1, img.indexOf('.')).split('_').join(' ')}
-            //         </div>
-            //         <Image className={styles.itemImg} src={img} key={i} layout="fixed" width={360} height={240} alt="" objectFit="cover"/>
-            //       </a>
-            //     </div>
-            //   </div>
-            // ))} */}
           </div>
-        </div>
       </div>
     </div>
   )
