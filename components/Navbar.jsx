@@ -27,20 +27,23 @@ const Navbar = () => {
   return (
     <div className={isScrolled === false ? styles.container : styles.container + ' ' + styles.containerScrolled}>
       <div className={styles.item}>
-        <Link href='#home'>
+        <Link href=''>
           <a className={styles.callButton}>De Lichtaartse Kwezel</a>
         </Link>
       </div>
       <div className={isOpen === false ? styles.list : styles.list + ' ' + styles.active}>
         <div className={styles.break}></div>
-        <Link href='#about'>
+        {/* <Link href='#about'>
           <a className={isOpen === false ? styles.listItem : styles.listItem + ' ' + styles.active} onClick={openMenu}>ABOUT</a>
-        </Link>
+        </Link> */}
         <Link href='#menu'>
           <a className={isOpen === false ? styles.listItem : styles.listItem + ' ' + styles.active} onClick={openMenu}>MENU</a>
         </Link>
         <Link href='#gallery'>
           <a className={isOpen === false ? styles.listItem : styles.listItem + ' ' + styles.active} onClick={openMenu}>GALLERY</a>
+        </Link>
+        <Link href='#team'>
+          <a className={isOpen === false ? styles.listItem : styles.listItem + ' ' + styles.active} onClick={openMenu}>TEAM</a>
         </Link>
         <Link href='#contact'>
           <a className={isOpen === false ? styles.listItem : styles.listItem + ' ' + styles.active} onClick={openMenu}>CONTACT</a>

@@ -4,7 +4,7 @@ import Contact from '../components/Contact';
 import Gallery from '../components/Gallery';
 import Landing from '../components/Landing';
 import Menu from '../components/Menu';
-import Staff from '../components/Staff';
+import Team from '../components/Team';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
       <About />
       <Menu />
       <Gallery />
-      <Staff />
+      <Team />
       <Contact />
     </div>
   );
