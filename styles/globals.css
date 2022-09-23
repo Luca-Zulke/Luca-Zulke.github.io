@@ -6,27 +6,27 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizelegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  scroll-padding-top: 70px;
+  scroll-padding-top: 50px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 481px) {
   html,
   body {
-    scroll-padding-top: 73px;
+    scroll-padding-top: 33px;
   }
 }
 
 @media (min-width: 768px) {
   html,
   body {
-    scroll-padding-top: 100px;
+    scroll-padding-top: 60px;
   }
 }
 
 @media (min-width: 992px) {
   html,
   body {
-    scroll-padding-top: 105px;
+    scroll-padding-top: 91px;
   }
 }
 
@@ -62,7 +62,7 @@ hr {
   margin-inline-start: auto;
   margin-inline-end: auto;
   overflow: hidden;
-  margin: 0px 0px 40px;
+  margin: 0px auto 40px;
 }
 
 button {

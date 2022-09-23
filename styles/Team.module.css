@@ -1,0 +1,134 @@
+.team {
+  color: #fff;
+  background: #444 url(../public/img/gallery5.jpg) center top no-repeat fixed;
+  background-size: cover;
+}
+
+.overlay {
+  padding: 120px 0 80px 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.infoContainer {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.infoContainer > div {
+  color: #fff;
+}
+
+.infoContainer hr {
+  background-color: #fff;
+}
+
+.infoContainer div:first-child {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+.infoContainer div:last-child {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.teamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.teamMember {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.member {
+  padding: 4px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 0;
+  height: 420px;
+  width: 280px;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.member::before {
+  content: '';
+  position: absolute;
+  border: 1px solid #ffffff99;
+  top: 6px;
+  bottom: 6px;
+  left: 6px;
+  right: 6px;
+  z-index: 20;
+  opacity: 0.7;
+}
+
+.caption {
+  padding: 9px;
+  padding-top: 9px;
+}
+
+.caption div:first-child {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.lightBoxCaptionName {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.caption div:last-child {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row;
+    width: 970px;
+  }
+
+  .teamMember {
+    padding: 0 15px;
+    width: 33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

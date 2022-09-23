@@ -20,6 +20,10 @@
   margin-left: auto;
 }
 
+.aboutContainer hr {
+  margin: 0 0 40px 0;
+}
+
 .aboutItem:nth-child(1) {
   font-size: 34px;
   font-weight: 500;

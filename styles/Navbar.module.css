@@ -2,8 +2,8 @@
   /* variables */
   --margin-left: 40px;
 
-  padding: 30px 40px 30px 20px;
-  margin: -50px 0 20px 0;
+  padding: 19px 40px 19px 20px;
+  margin: -60px 0 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,13 +16,13 @@
 .container.containerScrolled {
   background-color: #333333f1;
   transition: all 0.5s ease-in-out;
-  padding-block: 20px;
-  margin: -32px 0 20px 0;
+  padding-block: 12px;
+  margin: -42px 0 16px 0;
 }
 
 .callButton {
   font-family: 'Pattaya', sans-serif;
-  font-size: clamp(1.5rem, 4.2vw, 3rem);
+  font-size: clamp(1.7rem, 4.2vw, 3rem);
   cursor: pointer;
   color: #e2d3bf;
   text-shadow: 2px 2px #333;
@@ -37,6 +37,7 @@
 }
 
 .listItem {
+  all: unset; /* Remove global button styling */
   margin: 20px;
   font-weight: 50;
   cursor: pointer;
@@ -52,7 +53,7 @@
   top: 3px;
   height: 1px;
   width: 0%;
-  background: white;
+  background: currentColor;
   transition: ease-in-out 0.2s;
 }
 

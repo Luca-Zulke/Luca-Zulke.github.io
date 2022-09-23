@@ -1,3 +1,7 @@
+.gallery {
+  padding-bottom: 120px;
+}
+
 .container {
   padding: 15px 0;
   margin: 0 auto;
@@ -10,12 +14,8 @@
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   text-align: center;
-}
-
-.bannerContainer hr {
-  margin: 0px auto 40px;
 }
 
 .overlay {
@@ -67,6 +67,11 @@
   display: inline-block;
   margin: 0 10px;
   padding: 20px 0;
+  width: 100%;
+}
+
+.categories ul > li:first-child {
+  width: 100%;
 }
 
 .categories ul > li button {
@@ -129,17 +134,7 @@
 }
 
 .hoverText {
-  display: block;
-  position: absolute;
-  background-color: #00000099;
-  color: #ffffff;
-  z-index: 10;
-  height: 240px;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  line-height: 300px;
-  transition: all 0.3s ease-out;
+  display: none;
 }
 
 .itemHoverBg:hover .hoverText {
@@ -157,6 +152,12 @@
   display: none;
 }
 
+@media (min-width: 481px) {
+  .categories ul > li {
+    width: auto;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -164,6 +165,20 @@
 
   .item {
     width: 46%;
+  }
+
+  .hoverText {
+    display: block;
+    position: absolute;
+    background-color: #00000099;
+    color: #ffffff;
+    z-index: 10;
+    height: 240px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    line-height: 300px;
+    transition: all 0.3s ease-out;
   }
 }
 
@@ -174,6 +189,14 @@
 
   .item {
     width: 30%;
+  }
+
+  .categories ul > li:first-child {
+    width: auto;
+  }
+
+  .bannerContainer {
+    margin-bottom: 70px;
   }
 }
 
