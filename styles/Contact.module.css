@@ -1,11 +1,28 @@
 .contact {
   background-color: #f6f6f6;
+  position: relative;
 }
 
 .container {
   padding: 100px 15px 60px 15px;
   text-align: center;
   margin: 0 auto;
+}
+
+.spinner {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.overlay {
+  position: absolute;
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: #99999966;
 }
 
 .section {
